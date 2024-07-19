@@ -1,20 +1,11 @@
 const fs = require("fs");
 
 const metadataTemplate = `
-  <meta-data
-    android:name="com.supersami.foregroundservice.notification_channel_name"
-    android:value="Sticky Title"
-  />
-  <meta-data
-    android:name="com.supersami.foregroundservice.notification_channel_description"
-    android:value="Sticky Description."
-  />
-  <meta-data
-    android:name="com.supersami.foregroundservice.notification_color"
-    android:resource="@color/blue"
-  />
-  <service android:name="com.supersami.foregroundservice.ForegroundService"></service>
-  <service android:name="com.supersami.foregroundservice.ForegroundServiceTask"></service>
+  <meta-data android:name="com.supersami.foregroundservice.notification_channel_name" android:value="Sticky Title" />
+  <meta-data android:name="com.supersami.foregroundservice.notification_channel_description" android:value="Sticky Description." />
+  <meta-data android:name="com.supersami.foregroundservice.notification_color" android:resource="@color/blue" />
+  <service android:foregroundServiceType="microphone" android:name="com.supersami.foregroundservice.ForegroundService"/>
+  <service android:foregroundServiceType="microphone" android:name="com.supersami.foregroundservice.ForegroundServiceTask"></service>
 `;
 
 const androidManifestPath = `${process.cwd()}/android/app/src/main/AndroidManifest.xml`;
@@ -39,6 +30,10 @@ fs.readFile(androidManifestPath, "utf8", function (err, data) {
 
 const colorTemplate = `
   <resources>
+    <color name="splashscreen_background">#9037ff</color>
+    <color name="iconBackground">#ffffff</color>
+    <color name="colorPrimary">#023c69</color>
+    <color name="colorPrimaryDark">#9037ff</color>
     <item  name="blue"  type="color">#00C4D1
     </item>
     <integer-array  name="androidcolors">
