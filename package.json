@@ -1,6 +1,6 @@
 {
   "name": "@barokatu/rn-foreground-service",
-  "version": "2.2.3",
+  "version": "2.2.5",
   "description": "A Foreground Service for React Native version >= 0.74.1",
   "main": "index.js",
   "repository": "barokatu/rn-foreground-service",
@@ -14,14 +14,15 @@
     "react-native",
     "android",
     "foreground",
+    "microphone",
     "service",
     "background"
   ],
   "author": {
-    "name": "Raja Osama (supersami)"
+    "name": "Mohammad Barokatu Rizky"
   },
   "peerDependencies": {
-    "react-native": ">=0.74.1"
+    "react-native": ">=0.72.1"
   },
   "dependencies": {}
 }
