@@ -6,9 +6,9 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MICROPHONE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
         <application>
-        <meta-data android:name=".notification_channel_name" android:value="Sticky Title"/>
-        <meta-data android:name=".notification_channel_description" android:value="Sticky Description."/>
-        <meta-data android:name=".notification_color" android:resource="@color/blue"/>
+        <meta-data android:name="com.supersami.foregroundservice.notification_channel_name" android:value="Sticky Title"/>
+        <meta-data android:name="com.supersami.foregroundservice.notification_channel_description" android:value="Sticky Description."/>
+        <meta-data android:name="com.supersami.foregroundservice.notification_color" android:resource="@color/blue"/>
         <service android:foregroundServiceType="microphone" android:name=".ForegroundService"/>
         <service android:foregroundServiceType="microphone" android:name=".ForegroundServiceTask"/>
 
