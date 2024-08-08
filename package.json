@@ -1,6 +1,6 @@
 {
   "name": "@barokatu/rn-foreground-service",
-  "version": "2.2.7",
+  "version": "2.2.8",
   "description": "A Foreground Service for React Native version >= 0.74.1",
   "main": "index.js",
   "repository": "barokatu/rn-foreground-service",

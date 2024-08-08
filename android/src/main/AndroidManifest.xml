@@ -9,7 +9,7 @@
         <meta-data android:name="com.supersami.foregroundservice.notification_channel_name" android:value="Sticky Title"/>
         <meta-data android:name="com.supersami.foregroundservice.notification_channel_description" android:value="Sticky Description."/>
         <meta-data android:name="com.supersami.foregroundservice.notification_color" android:resource="@color/blue"/>
-        <service android:foregroundServiceType="microphone" android:name=".ForegroundService"/>
+        <service android:foregroundServiceType="microphone" android:name=".ForegroundService" stopWithTask="true"/>
         <service android:foregroundServiceType="microphone" android:name=".ForegroundServiceTask"/>
 
         <activity
